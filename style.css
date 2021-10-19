@@ -1,0 +1,84 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    row-gap: 20px;
+}
+
+nav a{
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+header{
+    background-image: url("lemn4.jpg");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+header h2{
+    margin-top: 3px;
+}
+
+header img{
+    width: 170px;
+    height: 170px;
+    border-radius: 80px;
+}
+
+header p{
+    margin-top: 60px;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mainSection{
+    height: 90vh;
+}
+
+.mainSection h2{
+    margin: 0;
+}
+
+
+.mainSection:nth-child(odd){
+    background-color: rgb(218, 218, 218);
+    
+}
+
+.mainSection:nth-child(even){
+    background-color: rgb(105, 101, 101);
+    
+}
+
+@media(min-width:450px){
+    nav{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        margin-bottom: 120px;
+    }
+}
