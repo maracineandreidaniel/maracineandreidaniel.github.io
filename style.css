@@ -105,6 +105,29 @@ header p{
     align-items: center;
 }
 
+.experienta{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.exp{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: 500px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+.exp img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
 @media(min-width:450px){
     nav{
         grid-template-columns: 1fr 1fr 1fr;
